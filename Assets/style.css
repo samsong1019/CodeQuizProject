@@ -1,0 +1,152 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+:root {
+    --hue-normal: 194;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-normal);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(var(--hue), 100%, 45%);
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+.left {
+    float: left;
+}
+.time {
+    float: right;
+    padding-right: 22px;
+}
+
+.container {
+    height: 500px;
+    width: 900px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 12px 2px;
+}   
+
+.title-opening {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#done {
+    justify-content: center;
+}
+#opening {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.tableCenter {
+    justify-content: center;
+}
+.highScoreTable {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.highScoreTable, th, td {
+    border: 2px solid black;
+    padding: 3px 40px;
+    max-width: fit-content;
+    justify-content: center;
+
+}
+#saveButton {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-left: 42%;
+    margin-right: 40%;
+}
+#userName {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 40%;
+}
+.moveDown {
+    position: relative;
+    top: 100px;
+}
+
+#question {
+    font-size: 25px;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+
+}
+
+.btn {
+    --hue: var(--hue-normal);
+    border: 2px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 20px 10px;
+    outline: none;
+    font-size: 20px;
+}
+
+.btn:hover {
+    border: 3.175px solid black;
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.startbtn {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+.nextbtn {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

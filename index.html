@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./Assets/style.css" />
+    <title>Code Quiz</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="nav">
+       
+        <p class="time" id="time"></p>
+      </nav>
+      <!-- HIGHSCORES PAGE -->
+      <div class="highScoresPage" id="highScoresPage">
+         <h1 id="HighScoresTitle">Highscores</h1>
+        <div class="tableCenter">
+          <table id="pastHighScore" class="highScoreTable">
+
+            <tr>
+              <th></th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+       
+          </table>
+        </div>
+        <input type="text" id="userName" placeholder="Enter Name" required />
+        <!-- <input type="number" placeholder="Enter Score" id="score"/> -->
+        <button id="saveButton">save</button>
+        <h1 id="score"></h1>
+      </div>
+      <!-- HOMEPAGE -->
+      <div class="moveDown">
+        <div id="title">
+          <h1 class="title-opening">Coding Quiz</h1>
+          <h2 id="opening">
+            You think you know JavaScript? Well lets find out!<br />
+            This quiz will be timed so make sure you finish it as quick as you
+            can.
+            <br />
+            Good luck!
+          </h2>
+        </div>
+        <!-- QUIZ PAGE -->
+        <main id="questionContainer" class="hide">
+          <div id="question">Question</div>
+          <div class="btn-grid" id="answer-buttons">
+            <button class="btn">choice 1</button>
+            <button class="btn">choice 2</button>
+            <button class="btn">choice 3</button>
+            <button class="btn">choice 4</button>
+          </div>
+        </main>
+        <div class="controls">
+          <button id="startbtn" class="startbtn btn">Start</button>
+          <button id="nextbtn" class="nextbtn btn hide">Next</button>
+        </div>
+      </div> <button id="done">HOMEPAGE</button>
+    </div>
+   
+    <script src="./Assets/script.js"></script>
+  </body>
+</html>
