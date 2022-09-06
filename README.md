@@ -1,4 +1,4 @@
-https://github.com/samsong1019/Code-Quiz/settings/pages
+https://github.com/samsong1019
 https://samsong1019.github.io/CodeQuizProject/
 
 this Project was the most challengeing thing I have done and I have learned many things on the way. I have had many problems with this mainly towards the end of the project with the local storage. I learned not to put .push after i sort because this just ignores the sorting and after being sorted pushes it to the sorted content. Finding out how to display local storage items was an extreme struggle took me over 20 hours. I know this is still very dirty and I have much to work on but I must move on and finish my other projects haha. 
